@@ -1,0 +1,17 @@
+import './WBCanvas/initialize';
+import '../components/dropfile';
+import './WBCanvas/animate';
+import './WBCanvas/arrowsConnectors';
+import './WBCanvas/file';
+import './WBCanvas/group';
+import './WBCanvas/lockUnlock';
+import './WBCanvas/panel';
+import './WBCanvas/position';
+import './WBCanvas/render';
+import './WBCanvas/sync';
+import './WBCanvas/utils';
+import './WBCanvas/viewport';
+import './WBCanvas/widget';
+import './WBCanvas/zindex';
+import './WBCanvas/WBCanvasUndoRedo';
+import './WBCanvas/widgetAI';

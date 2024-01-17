@@ -1,0 +1,105 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Ava CSS */
+.chatAi-loading-voiceAnimation {
+  animation: voiceAnimation 1s ease-in-out infinite;
+}
+
+.chatAi-loading-icon {
+  animation: loading 1.2s linear infinite;
+}
+
+.chatAiUploadFile-loading-icon {
+  animation: loading 1s linear infinite;
+}
+
+.BoardEntity-loading-icon {
+  animation: loading 1.2s linear infinite,
+}
+
+.audioToText-loading-icon {
+  animation: loading 600ms linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes voiceAnimation {
+  0% {
+    transform: scaleY(0);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+/* Tutorials CSS */
+.Tutorials-tourMask {
+  display: none;
+}
+
+.reactour__helper {
+  width: 330px;
+  height: 480px;
+  background-color: #FFFFFF !important;
+  border: 1px solid #F21D6B;
+  box-shadow: 0px 2px 10px rgba(58, 53, 65, 0.1) !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  border-radius: 6px !important;
+  transition: none !important;
+}
+
+.reactour__helper .reactour__close {
+  display: none;
+}
+
+.reactour__helper button[data-tour-elem="left-arrow"] {
+  display: none;
+}
+
+.reactour__helper button[data-tour-elem="right-arrow"] {
+  display: none;
+}
+
+.reactour__helper button[data-tour-elem="dot"] {
+  border: 2px solid #F21D6B;
+  width: 9px;
+  height: 9px;
+  margin-right: 12px
+}
+
+.reactour__helper div[data-tour-elem="controls"] {
+  justify-content: flex-start;
+  margin-left: 20px;
+}

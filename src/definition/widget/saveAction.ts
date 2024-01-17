@@ -1,0 +1,11 @@
+export enum SaveAction{
+    MOVED="MOVED",
+    SCALED="SCALED",
+    ADDED="ADDED",
+    PASTE="PASTE",
+    REMOVED="REMOVED",
+    MODIFIED="MODIFIED",
+    UNBIND="UNBIND",
+    BIND="BIND",
+    ROTATED="ROTATED"
+}

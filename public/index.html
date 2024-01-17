@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+  <meta name="description" content="A new way to co-create with AI" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>BoardX App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.2/pdf.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  </style>
+
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+    }
+
+    * {
+      font-family: 'Inter', sans-serif !important;
+    }
+
+    html {
+      overflow: hidden;
+    }
+
+    /* 设置滚动条样式 */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 12px;
+      background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    #bg-process {
+      width: 180px;
+      height: 4px;
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.16);
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    #process {
+      height: 100%;
+      border-radius: 4px;
+      transition: all 0.5s cubic-bezier(0, 0.64, 0.36, 1);
+      background-color: #150d33;
+      animation: processAnimation 5s ease forwards;
+    }
+
+    @keyframes processAnimation {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0px; font-family: Inter,Roboto,  sans-serif;">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div id="loading" style="
+      width: 100vw;
+      height: 100vh;
+      background-color: #fff;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    ">
+    <div style="
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      ">
+      <div id="logoImg" style="
+          margin: auto;
+          width: 86px;
+          height: 48px;
+          background: url(/images/logo_1.svg) no-repeat center;
+          background-size: cover;
+        "></div>
+      <div id="bg-process" class="bg-process">
+        <div id="process" class="process"></div>
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

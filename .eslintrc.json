@@ -1,0 +1,63 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "window": "writable",
+    "document": "writable",
+    "localStorage": "writable",
+    "Mongo": "writable",
+    "Boardx": "writable",
+    "canvas": "writable",
+    "$": "writable",
+    "Image": "writable",
+    "hammer": "writable"
+  },
+  "settings": {
+    "import/resolver": "node"
+  },
+  "plugins": [
+    "unused-imports"
+  ],
+  "rules": {
+    "no-plusplus": 0,
+    "no-underscore-dangle": 0,
+    "no-console": "off",
+    "consistent-return": "off",
+    "linebreak-style": "off",
+    "no-param-reassign": "off",
+    "no-unused-vars": "error",
+    "max-len": "off",
+    "func-names": "off",
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-sort-props": [
+      "error"
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
